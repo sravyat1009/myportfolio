@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/6e2b352f3f.js" crossorigin="anonymous"></script>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm Sravya Sri Tiriveedhi</h1>
+        </div>
+    </div>
+</div> 
+<!--------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/myimage.jpg.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="matter"> Hi! I’m Sravya Sri Tiriveedhi, born and brought up in Hyderabad. I’m currently pursuing Bachelor of Technology in Electronics & Communication Engineering at GNITS, Hyderabad and I'm also pursuing Bachelor of Science Degree in Data Science & Applications at IIT Madras.
+                     Over the years, I’ve built skills in programming languages like JAVA, Python, Verilog HDL and C.
+                      Outside academics, Photography is one of my favorite creative outlets, I was the Finance Secretary at Photography club GNITS and I’ve contributed as a PhotoJournalist for various events. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>JAVA</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>Verilog HDL</span></li>
+                        <li><span>C</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Technology, Electronics and Communication (2021-25)
+                            <br>G. Narayanamma Institute of Technology and Science, Hyderabad </br>
+                            8.34/10</span></li>
+                        <li><span>Bachelor of Science, Data Science and Applications (2023)
+                            <br>IIT Madras </BR>6.5/10</span></li>
+                        <li><span>Senior Secondary XII, Science (2019-21)
+                            <br>TSRJC (TSBIE board)</br> 83%</span></li>
+                        <li><span>Secondary X (2018-19)
+                            <br>Rao's Group of Schools (SSC board) </br>9.5/10</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Certificate of Achievement in 5G & 6G Hackathon 2024 by DOT, TCOE India, MOC, ITUWSA at IIIT
+                            Hyderabad
+                            </span></li>
+                        <li><span>Certificate of Appreciation for serving as Photo Journalist at WILC 2023 and WLC 2024 by GNITS</span></li>
+                        <li><span>Certificate of Excellence for completing Value Added Course on Professional Development by
+                            Teenzclap</span></li>
+                        <li><span>Certificate of Participation in "Robotics-Innovation to Incubation Workshop" jointly organized by GNITS
+                            and E&ICT Academy, NIT Warangal</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-------------------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/project1.jpg">
+                <div class="layer">
+                    <h3>Weather Monitoring System using IOT</h3>
+                    <P> Developed an Internet of things based Weather monitoring system which will transfer real time weather data
+                        collected from the sensors to a central server and data will be displayed on an LCD.
+                        </P>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg">
+                <div class="layer">
+                    <h3>5G Computing using Raspberry Pi</h3>
+                    <p>Developed an affordable 5G-enabled computing solution using a Raspberry Pi microprocessor to address
+                        the need for low-cost computers in rural schools and colleges.
+                        Configured Raspberry Pi allowing full desktop functionality, Installed Raspberry Pi OS on a micro SD card and
+                        set up the device for standard computing tasks, including internet browsing using 5G Wi-Fi</p>
+                </div>
+            </div>
+        </div> 
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="mail"><i class="fa-solid fa-envelope"></i> sravyatiriveedhi@gmail.com</p>
+                <p class="phone"><i class="fa-solid fa-phone"></i></i> +91 7995576109</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sravyasritiriveedhi"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.link/6hpoi2"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/Sravya Sri Tiriveedhi (4).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email"name="email"placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sravya. Made by Sravya</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlfxO4egMMZHbUW5j1ncjE-W8rWUdBpfp3JR8mVp_KkimwbO8SNBSMFUX7BTUNlZtocQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
